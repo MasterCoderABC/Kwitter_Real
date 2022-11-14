@@ -58,6 +58,7 @@ function updateLike(message_id){
       firebase.database().ref(room_name).child(message_id).update({
           like: updated_likes
       });
+      
 }
 
 function logout(){
